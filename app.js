@@ -142,7 +142,14 @@ searchBtn.addEventListener('click', function () {
 })
 
 // Enter key starts working from here 
+var search = document.getElementById("search-btn");
+var input = document.getElementById("search");
 
+input.addEventListener("keypress", function(event) {
+    if (event.key == 'Enter'){
+        search.click();
+    }   
+});
 
 // enter key ends working from here 
 
